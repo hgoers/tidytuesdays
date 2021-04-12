@@ -41,3 +41,6 @@ ggplot(brazil_loss, aes(x = year, y = value, fill = name)) +
         axis.title = element_text(size = 11)) + 
   scale_fill_manual(values = wesanderson::wes_palette("Royal1", 11, type = "continuous")) + 
   scale_x_continuous(breaks = seq(2001, 2013, 2))
+
+# save plot ----
+ggsave("W15.png")
